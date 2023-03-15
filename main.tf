@@ -1,5 +1,5 @@
 # SCF Namespace
-resource "tencentcloud_scf_namespace" "this_namespace" {
+resource "tencentcloud_scf_namespace" "this" {
   count           = var.create_namespace ? 1 : 0
   namespace       = var.namespace_name
   description     = var.namespace_description
@@ -8,7 +8,7 @@ resource "tencentcloud_scf_namespace" "this_namespace" {
 # SCF Function
 resource "tencentcloud_scf_function" "this" {
   count              = var.create_function ? 1 : 0
-  namespace          = var.function_namespace
+  namespace          = local.function_namespace_name
   name               = var.function_name
   description        = var.function_description
   zip_file           = var.function_zip_file
@@ -24,4 +24,14 @@ resource "tencentcloud_scf_function" "this" {
   vpc_id             = var.function_vpc_id
   subnet_id          = var.function_subnet_id
   enable_public_net  = var.function_enable_public_net
+  dynamic "triggers"{
+     for_each = var.function_trigger_config
+     content {
+        name         = triggers.value.name
+        trigger_desc = triggers.value.trigger_desc
+        type         = triggers.value.type
+        cos_region   = triggers.value.cos_region
+     }
+  }
+
 }

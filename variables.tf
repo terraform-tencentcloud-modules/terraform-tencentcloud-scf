@@ -4,13 +4,13 @@
 variable "create_namespace" {
   description = "Whether to create a new SCF namespace. Default to true."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "namespace_name" {
   description  = "Name of the SCF namespace."
   type         = string
-  default      = ""
+  default      = "test_uu"
 }
 
 variable "namespace_description" {
@@ -23,7 +23,7 @@ variable "namespace_description" {
 * scf_function_config
 */
 variable "create_function" {
-  description = "Whether to create a new SCF namespace. Default to true."
+  description = "Whether to create event function."
   type        = bool
   default     = true
 }
@@ -31,13 +31,13 @@ variable "create_function" {
 variable "function_namespace" {
   description = "Namespace of the SCF function, default is default."
   type        = string
-  default     = "default"
+  default     = "bob"
 }
 
 variable "function_name" {
   description = "Name of the SCF function. Name supports 26 English letters, numbers, connectors, and underscores, it should start with a letter. The last character cannot be - or _. Available length is 2-60."
   type        = string
-  default     = ""
+  default     = "test-name"
 }
 
 variable "function_description" {
@@ -49,7 +49,7 @@ variable "function_description" {
 variable "function_zip_file" {
   description = "Zip file of the SCF function, conflict with cos_bucket_name, cos_object_name, cos_bucket_region."
   type        = string
-  default     = ""
+  default     = "./go_example/main.zip"
 }
 
 variable "function_cos_bucket_name" {
@@ -73,13 +73,13 @@ variable "function_cos_bucket_region" {
 variable "function_runtime" {
   description = "Runtime of the SCF function, only supports Python2.7, Python3.6, Nodejs6.10, Nodejs8.9, Nodejs10.15, PHP5, PHP7, Golang1, and Java8."
   type        = string
-  default     = ""
+  default     = "Go1"
 }
 
 variable "function_handler" {
   description = "Handler of the SCF function. The format of name is <filename>.<method_name>, and it supports 26 English letters, numbers, connectors, and underscores, it should start with a letter. The last character cannot be - or _. Available length is 2-60."
   type        = string
-  default     = ""
+  default     = "main"
 }
 
 variable "function_mem_size" {
@@ -120,11 +120,20 @@ variable "function_subnet_id" {
 
 variable "function_enable_public_net" {
   description = "Indicates whether public net config enabled. Default false. NOTE: only vpc_id specified can disable public net config."
-  type        = string
-  default     = ""
+  type        = bool
+  default     = false
 }
 
-
+variable "function_trigger_config" {
+  description = "Trigger list of the SCF function, note that if you modify the trigger list, all existing triggers will be deleted, and then create triggers in the new list."
+  type = list(object({
+    name = string
+    trigger_desc = string
+    type = string
+    cos_region = string
+  }))
+  default = []
+}
 
 /*
 * layer_config
