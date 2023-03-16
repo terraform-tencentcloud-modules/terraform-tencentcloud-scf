@@ -25,15 +25,15 @@ resource "tencentcloud_cls_topic" "topic" {
     }
 }
 
-#Reference function module
+#Reference vpc module
 module "vpc" {
     source  = "terraform-tencentcloud-modules/vpc/tencentcloud"
     version = "1.1.0"
 
-    vpc_name = "bob-simple-vpc"
+    vpc_name = "test-simple-vpc"
     vpc_cidr = "10.0.0.0/16"
 
-    subnet_name  = "bob-simple-vpc"
+    subnet_name  = "test-simple-vpc"
     subnet_cidrs = ["10.0.0.0/24"]
 
     destination_cidrs = ["1.0.1.0/24"]

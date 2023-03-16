@@ -3,7 +3,7 @@ terraform {
     tencentcloud = {
       source = "tencentcloudstack/tencentcloud"
       # 通过version指定版本
-      # version = ">=1.60.18"
+      # version = ">=1.18.1"
     }
   }
 }

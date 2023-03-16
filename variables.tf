@@ -4,13 +4,13 @@
 variable "create_namespace" {
   description = "Whether to create a new SCF namespace. Default to true."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "namespace_name" {
   description  = "Name of the SCF namespace."
   type         = string
-  default      = "test_uu"
+  default      = ""
 }
 
 variable "namespace_description" {
@@ -31,13 +31,13 @@ variable "create_function" {
 variable "function_namespace" {
   description = "Namespace of the SCF function, default is default."
   type        = string
-  default     = "bob"
+  default     = "default"
 }
 
 variable "function_name" {
   description = "Name of the SCF function. Name supports 26 English letters, numbers, connectors, and underscores, it should start with a letter. The last character cannot be - or _. Available length is 2-60."
   type        = string
-  default     = "test-name"
+  default     = ""
 }
 
 variable "function_description" {
@@ -49,7 +49,7 @@ variable "function_description" {
 variable "function_zip_file" {
   description = "Zip file of the SCF function, conflict with cos_bucket_name, cos_object_name, cos_bucket_region."
   type        = string
-  default     = "./go_example/main.zip"
+  default     = ""
 }
 
 variable "function_cos_bucket_name" {
@@ -73,7 +73,7 @@ variable "function_cos_bucket_region" {
 variable "function_runtime" {
   description = "Runtime of the SCF function, only supports Python2.7, Python3.6, Nodejs6.10, Nodejs8.9, Nodejs10.15, PHP5, PHP7, Golang1, and Java8."
   type        = string
-  default     = "Go1"
+  default     = ""
 }
 
 variable "function_handler" {
@@ -92,6 +92,12 @@ variable "function_timeout" {
   description = "Timeout of the SCF function, unit is second. Default 3. Available value is 1-900."
   type        = number
   default     = 3
+}
+
+variable "function_role" {
+  description = "Role of the SCF function."
+  type        = string
+  default     = ""
 }
 
 variable "function_cls_logset_id" {

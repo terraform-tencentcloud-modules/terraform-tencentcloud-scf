@@ -17,6 +17,7 @@ resource "tencentcloud_scf_function" "this" {
   cos_bucket_region  = var.function_cos_bucket_region == "" ? null : var.function_cos_bucket_region
   runtime            = var.function_runtime
   handler            = var.function_handler
+  role               = var.function_role
   mem_size           = var.function_mem_size
   timeout            = var.function_timeout
   cls_logset_id      = var.function_cls_logset_id
