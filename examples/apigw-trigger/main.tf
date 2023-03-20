@@ -12,7 +12,8 @@ resource "tencentcloud_cam_role" "apigw_role" {
       "effect": "allow",
       "principal": {
         "service": [
-          "scf.qcloud.com"
+          "scf.qcloud.com",
+          "apigateway.qcloud.com"
         ]
       }
     }
@@ -33,6 +34,8 @@ resource "tencentcloud_cam_policy" "apigw_policy" {
             {
               "action": [
                          "name/apigw:*",
+                         "name/scf:*",
+                         "name/cls:*",
                          "name/monitor:GetMonitorData"
                    ],
                "resource": ["*"],

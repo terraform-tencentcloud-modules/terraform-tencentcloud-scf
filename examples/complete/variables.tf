@@ -32,7 +32,7 @@ variable "create_function" {
 variable "function_namespace" {
   description = "Namespace of the SCF function, default is default."
   type        = string
-  default     = "bob"
+  default     = "default"
 }
 
 variable "function_name" {
