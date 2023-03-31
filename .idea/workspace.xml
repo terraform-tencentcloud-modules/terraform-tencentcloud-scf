@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21606098-4749-419f-b015-e44b6dee71b2" name="Default Changelist" comment="feat:add readme and licence">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.tf" beforeDir="false" afterPath="$PROJECT_DIR$/version.tf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="2NGlHfgFwjRNdzaGUdjVXYHxR9i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="691" y="464" key="#GOROOT" timestamp="1679298228949">
+      <screen x="0" y="25" width="1792" height="1040" />
+    </state>
+    <state x="691" y="464" key="#GOROOT/-1920.25.1920.1055/0.25.1792.1040@0.25.1792.1040" timestamp="1679298228949" />
+    <state x="696" y="367" key="#Go_Modules" timestamp="1679298246484">
+      <screen x="0" y="25" width="1792" height="1040" />
+    </state>
+    <state x="696" y="367" key="#Go_Modules/-1920.25.1920.1055/0.25.1792.1040@0.25.1792.1040" timestamp="1679298246484" />
+    <state x="100" y="125" width="1592" height="810" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1680232430754">
+      <screen x="0" y="25" width="1792" height="1040" />
+    </state>
+    <state x="100" y="125" width="1592" height="810" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.25.1920.1055/0.25.1792.1040@0.25.1792.1040" timestamp="1680232430754" />
+    <state x="697" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1679298273116">
+      <screen x="0" y="25" width="1792" height="1040" />
+    </state>
+    <state x="697" y="448" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.25.1920.1055/0.25.1792.1040@0.25.1792.1040" timestamp="1679298273116" />
+    <state x="597" y="285" width="597" height="490" key="find.popup" timestamp="1679904701374">
+      <screen x="0" y="25" width="1792" height="1041" />
+    </state>
+    <state x="597" y="285" width="597" height="490" key="find.popup/-1920.25.1920.1055/0.25.1792.1041@0.25.1792.1041" timestamp="1679904701374" />
+    <state x="558" y="413" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1680231723455">
+      <screen x="0" y="25" width="1792" height="1040" />
+    </state>
+    <state x="558" y="413" key="git4idea.remote.GitConfigureRemotesDialog/-1920.25.1920.1055/0.25.1792.1040@0.25.1792.1040" timestamp="1680231723455" />
+  </component>
+</project>

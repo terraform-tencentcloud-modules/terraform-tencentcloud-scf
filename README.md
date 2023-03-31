@@ -112,8 +112,7 @@ module "scf_function" {
 
 ## Examples:
 
-- [Complete](https://github.com/terraform-tencentcloud-modules/terraform-tencent-scf/tree/master/examples/complete
-) - A complete example of SCF features
+- [Complete](https://github.com/terraform-tencentcloud-modules/terraform-tencentcloud-scf/tree/main/examples/complete) - A complete example of SCF features
 
 
 ## Requirements
